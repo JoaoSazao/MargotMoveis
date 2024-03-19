@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --font-primary: "Lato", sans-serif;
+  --font-secondary: "Crimson Pro", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #D9CDF7;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16.7rem;
+  margin-left: -13rem;
+  gap: 8rem;
+}
+
+.container img {
+  width: 50rem;
+  cursor: zoom-in;
+}
+
+.container .information-item h5 {
+  color: #271A45;
+  font-family: var(--font-primary);
+  font-weight: 300;
+  margin-bottom: 1.2rem;
+}
+
+.container .information-item h1 {
+  color: #271A45;
+  font-family: var(--font-secondary);
+  font-size: 4.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.container .information-item p {
+  color: #271A45;
+  font-family: var(--font-primary);
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+.container .information-item a {
+  border: 1px solid #271A45;
+  margin-top: 1rem;
+  text-decoration: none;
+  padding: 1.2rem 1.8rem;
+  border-radius: 2.5rem;
+  font-family: var(--font-primary);
+  font-size: 1.2rem;
+  transition: all .3s ease;
+}
+
+.btn:hover {
+  background-color: #271A45;
+  color: white;
+}
+
+@media screen and (max-width: 360px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container img {
+    width: 50%;
+    margin-left: 12rem;
+  }
+
+  .container .information-item h5 {
+    margin-left: 15rem;
+  }
+
+  .container .information-item h1 {
+    margin-left: 15rem;
+  }
+
+  .container .information-item p {
+    margin-left: 15rem;
+  }
+
+  .container .information-item a {
+    margin-left: 15rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container img {
+    width: 60%;
+    margin-left: 10rem;
+  }
+
+  .container .information-item h5 {
+    margin-left: 4rem;
+  }
+
+  .container .information-item h1 {
+    margin-left: 4rem;
+  }
+
+  .container .information-item p {
+    margin-left: 4rem;
+  }
+
+  .container .information-item a {
+    margin-left: 4rem;
+  }
+}
